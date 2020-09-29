@@ -16,7 +16,7 @@ describe('Header Component', () => {
     });
 
     it('Sholud run withour errors',() => {
-        const wrapper = findByDataAtribute(component,'logo')
+        const wrapper = findByDataAtribute(component,'logo');
         expect(wrapper.length).toBe(1);
     });
 });
