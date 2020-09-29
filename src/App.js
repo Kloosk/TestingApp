@@ -1,11 +1,12 @@
 import React from 'react';
-import Index from "./components/main";
+import Header from "./components/header";
+import './app.scss'
 
 
 function App() {
   return (
       <div>
-        <Index/>
+        <Header/>
       </div>
   );
 }
