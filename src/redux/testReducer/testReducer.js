@@ -1,10 +1,6 @@
-import {ADDV} from "./testTypes";
-
-const initialState = {};
-
-const testReducer = (state=initialState,action) => {
+const testReducer = (state=[],action) => {
   switch(action.type){
-      case ADDV: {
+      case 'SUCCESS': {
           return action.payload
       }
       default: return {}
