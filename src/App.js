@@ -6,6 +6,7 @@ import Btn from "./components/btn";
 import Posts from "./components/posts";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchUsers} from "./redux";
+import Hooks from "./components/hooks/Hooks";
 
 const propsy = [{
    name: "Luki",
@@ -21,9 +22,9 @@ const App = () => {
         <Main title="Tytuł" txt="opis jakis tam ciekawy" propsy={propsy}/>
         <Btn func={() => {dispatch(fetchUsers())}} txt="Pobierz posty"/>
           {posts.length > 1 &&
-            posts.map((post,index) => {
-               return <Posts post={post} key={index}/>
-            })
+          posts.map((post, index) => {
+              return <Posts post={post} key={index}/>
+          })
           }
       </div>
   );
