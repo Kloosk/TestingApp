@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types'
 
 
-const Main = ({title,txt,propsy}) => {
+const Main = ({title,txt}) => {
     if(!title){
         return null
     }

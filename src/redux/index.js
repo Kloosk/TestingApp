@@ -1,0 +1,1 @@
+export {fetchUsers,getData} from './testReducer/testActions'
